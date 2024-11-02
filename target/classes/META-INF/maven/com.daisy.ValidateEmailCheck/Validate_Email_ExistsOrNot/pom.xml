@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.daisy.ValidateEmailCheck</groupId>
+	<artifactId>Validate_Email_ExistsOrNot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Validate_Email_ExistsOrNot</name>
+	<description>To Check if Email Afddress Exists over Globe Or Not.
+		We Will Go in Multiple Steps .
+		1) Check if Domian is valid or not by Domian MX Reccords
+		2) We Will try to Check if Full Mail address exists by Bounce back
+		method or without bounce method
+	</description>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>javax.mail-api</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/dnsjava/dnsjava -->
+		<dependency>
+			<groupId>dnsjava</groupId>
+			<artifactId>dnsjava</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.simplejavamail</groupId>
+			<artifactId>simple-java-mail</artifactId>
+			<version>8.12.2</version>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
